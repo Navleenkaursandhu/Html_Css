@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Popup Vanilla Javascript</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container" id="blur">
+        <div class="content">
+            <h2>WEB DESIGNING</h2>
+            <img src="https://s3-us-west-2.amazonaws.com/robogarden-new/Articles/upload/blogs/lg-leverage-of-coding.jpg">
+            <a href="#" onclick="toggle()">ReadMore</a>
+        </div>
+    </div>
+    <div id="popup">
+        <h2>What is Web Designing?</h2>
+        <p>Web design encompasses many different skills and
+        disciplines in the production andmaintenance of 
+        websites. The different areas of web design include
+        web graphic design; user interface design; 
+        authoring, including standardised code and 
+        proprietary software; user experience design; and 
+        search engine optimization</p>
+        <a href="#" onclick="toggle()">Close</a>
+    </div>
+    <script type="text/javascript">
+        function toggle(){
+            var blur = document.getElementById('blur');
+            blur.classList.toggle('active');
+            var popup = document.getElementById('popup');
+            popup.classList.toggle('active');
+        }
+
+    </script>
+</body>
+</html>    
